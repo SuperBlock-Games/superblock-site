@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SUPERBLOCK Co., Ltd. — 주식회사 슈퍼블럭</title>
 <meta name="description" content="SUPERBLOCK is a global-oriented subculture mobile game studio based in Suwon, Korea. 슈퍼블럭은 글로벌 서브컬처 모바일 게임 전문 개발사입니다.">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Sora:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0a0e1a;
@@ -17,8 +18,8 @@
   --ink:#eef1f8;
   --ink-dim:#98a1bd;
   --ink-faint:#5f6a87;
-  --accent:#ff5a1f;
-  --accent-soft:#ff8a5c;
+  --accent:#a42325;
+  --accent-soft:#e05a52;
   --violet:#7c74ff;
   --violet-soft:#a9a3ff;
 }
@@ -59,11 +60,13 @@ header.scrolled{border-bottom-color:var(--line)}
   display:grid;place-items:center;
   font-family:'Sora';font-weight:800;font-size:17px;
   color:#fff;
-  background:linear-gradient(135deg,var(--accent),#ff7a3c);
+  background:linear-gradient(135deg,var(--accent),#c3403c);
   border-radius:7px;
   transform:skewX(-8deg);
 }
 .brand-mark span{transform:skewX(8deg)}
+.brand-bi{height:38px;width:auto;display:block}
+.brand-kr{font-family:'Black Han Sans','Noto Sans KR',sans-serif;font-size:20px;color:#fff;letter-spacing:.12em;padding-top:3px}
 .brand-name{font-family:'Sora';font-weight:700;font-size:16px;letter-spacing:.04em}
 .nav-links{display:flex;gap:30px}
 .nav-links a{
@@ -86,7 +89,7 @@ header.scrolled{border-bottom-color:var(--line)}
   content:"";position:absolute;inset:0;
   background:
     radial-gradient(120% 80% at 80% 10%,rgba(124,116,255,.16),transparent 55%),
-    radial-gradient(90% 70% at 15% 90%,rgba(255,90,31,.13),transparent 55%),
+    radial-gradient(90% 70% at 15% 90%,rgba(164,35,37,.15),transparent 55%),
     linear-gradient(180deg,var(--bg),var(--bg-2));
 }
 .grid-lines{position:absolute;inset:0;opacity:.5;
@@ -168,7 +171,7 @@ section.block{padding:92px 0;position:relative}
   padding:28px 26px;position:relative;overflow:hidden;
   transition:border-color .3s,transform .3s;
 }
-.card:hover{border-color:rgba(255,90,31,.35);transform:translateY(-3px)}
+.card:hover{border-color:rgba(164,35,37,.45);transform:translateY(-3px)}
 .card .idx{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);letter-spacing:.1em}
 .card h3{font-size:18px;font-weight:600;margin:14px 0 10px}
 .card p{color:var(--ink-dim);font-size:14px}
@@ -255,8 +258,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
 <header id="hdr">
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <span class="brand-mark"><span>S</span></span>
-      <span class="brand-name">SUPERBLOCK</span>
+      <img class="brand-bi" src="sb_bi_transparent.png" alt="SUPERBLOCK">
+      <span class="brand-kr">슈퍼블럭</span>
     </a>
     <nav class="nav-links">
       <a href="#about">회사소개 / About</a>
@@ -483,7 +486,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
 
   <footer>
     <div class="wrap foot">
-      <div class="c">© 2026 SUPERBLOCK Co., Ltd.</div>
+      <div style="display:flex;align-items:center;gap:14px"><img src="sb_bi_transparent.png" alt="SUPERBLOCK" style="height:40px;width:auto"><div class="c">© 2026 SUPERBLOCK Co., Ltd.</div></div>
       <div class="biz">
         주식회사 슈퍼블럭 &nbsp;|&nbsp; 대표 이주녕 &nbsp;|&nbsp; 사업자등록번호 106-87-14327<br>
         경기도 수원시 장안구 수성로327번길 12-8, 202호
