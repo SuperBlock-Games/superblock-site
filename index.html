@@ -199,6 +199,14 @@ section.block{padding:92px 0;position:relative}
 .tspec .v{font-size:15px;color:var(--ink);font-weight:600;margin-top:6px}
 .tspec .v .en{display:block;font-size:11.5px;color:var(--ink-dim);font-weight:400;font-family:'JetBrains Mono',monospace;margin-top:2px}
 
+.oz-hero{position:relative;overflow:hidden}
+.oz-hero img:first-child{width:100%;display:block;aspect-ratio:2.2/1;object-fit:cover;object-position:center 30%}
+.oz-shade{position:absolute;inset:0;background:linear-gradient(to top,#0d1226 2%,rgba(13,18,38,.35) 45%,rgba(13,18,38,0) 75%)}
+.oz-logo{position:absolute;left:44px;bottom:26px;width:min(300px,46%);z-index:2;filter:drop-shadow(0 4px 18px rgba(0,0,0,.55))}
+@media(max-width:600px){.oz-logo{left:22px;bottom:14px}}
+.oz-body{padding:34px 46px 46px;position:relative;z-index:1}
+@media(max-width:600px){.oz-body{padding:24px 22px 30px}}
+
 /* ---------- timeline ---------- */
 .timeline{position:relative;margin-top:10px}
 .tl-item{
@@ -370,29 +378,36 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
         <h2>대표 타이틀</h2>
         <p class="kr-sub">Our flagship title, currently in development.</p>
       </div>
-      <div class="title-showcase reveal">
-        <span class="title-tag">Flagship Title · In Development</span>
-        <h3>GODDESSKISS&nbsp;2</h3>
-        <p class="kr-title">여신의 키스 2</p>
-        <div class="title-tags">
-          <span class="ttag">#수집형RPG</span>
-          <span class="ttag">#Collectible RPG</span>
-          <span class="ttag">#서브컬처</span>
-          <span class="ttag">#Subculture</span>
-          <span class="ttag">#Global</span>
+      <div class="title-showcase reveal" style="padding:0">
+        <div class="oz-hero">
+          <img src="oz_hero.jpg" alt="OZ: Re:Write key visual" loading="lazy">
+          <div class="oz-shade"></div>
+          <img class="oz-logo" src="oz_logo.png" alt="OZ: Re:Write">
         </div>
-        <div class="title-specs">
-          <div class="tspec">
-            <div class="k">Genre</div>
-            <div class="v">2D 수집형 RPG<span class="en">2D Collectible RPG</span></div>
+        <div class="oz-body">
+          <span class="title-tag">Flagship Title · In Development</span>
+          <h3>OZ: Re:Write</h3>
+          <p class="kr-title">오즈: 리라이트 — 일본 시장에서 검증된 IP와 아트 자산을 재정비하여 다시 선보이는<br>감성 서브컬처 RPG</p>
+          <div class="title-tags">
+            <span class="ttag">#수집형RPG</span>
+            <span class="ttag">#Collectible RPG</span>
+            <span class="ttag">#서브컬처</span>
+            <span class="ttag">#Subculture</span>
+            <span class="ttag">#Global</span>
           </div>
-          <div class="tspec">
-            <div class="k">Platform</div>
-            <div class="v">모바일<span class="en">iOS / Android</span></div>
-          </div>
-          <div class="tspec">
-            <div class="k">Launch</div>
-            <div class="v">2027 예정<span class="en">Targeting 2027</span></div>
+          <div class="title-specs">
+            <div class="tspec">
+              <div class="k">Genre</div>
+              <div class="v">캐릭터 수집형 RPG<span class="en">Collectible RPG</span></div>
+            </div>
+            <div class="tspec">
+              <div class="k">Platform</div>
+              <div class="v">모바일 · PC<span class="en">iOS / Android · Steam</span></div>
+            </div>
+            <div class="tspec">
+              <div class="k">Launch</div>
+              <div class="v">2027 예정<span class="en">Targeting 2027</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -427,8 +442,12 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
           <div class="tl-body"><div class="t">코나벤처파트너스 투자 유치</div><div class="en">Investment from Kona Venture Partners</div></div>
         </div>
         <div class="tl-item reveal">
+          <div class="tl-year">2026</div>
+          <div class="tl-body"><div class="t">「OZ: Re:Write」 IP 및 게임 자산 양수, 프로젝트 재가동</div><div class="en">Acquired OZ: Re:Write IP &amp; assets — project reboot</div></div>
+        </div>
+        <div class="tl-item reveal">
           <div class="tl-year">2027</div>
-          <div class="tl-body"><div class="t">「여신의 키스 2」 정식 서비스 목표</div><div class="en">GODDESSKISS 2 — targeted launch</div></div>
+          <div class="tl-body"><div class="t">「OZ: Re:Write」 글로벌 재출시 목표</div><div class="en">OZ: Re:Write — targeted global relaunch</div></div>
         </div>
       </div>
     </div>
