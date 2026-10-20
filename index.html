@@ -65,15 +65,16 @@ header.scrolled{border-bottom-color:var(--line)}
   transform:skewX(-8deg);
 }
 .brand-mark span{transform:skewX(8deg)}
-.brand-bi{height:42px;width:auto;display:block}
+.brand-bi{height:24px;width:auto;display:block}
+@media(max-width:600px){.brand-bi{height:18px}}
 .brand-kr{font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:24px;color:#fff;letter-spacing:.1em;padding-top:2px;line-height:1}
 .brand-name{font-family:'Sora';font-weight:700;font-size:16px;letter-spacing:.04em}
 .nav-links{display:flex;gap:30px}
 .nav-links a{
-  color:var(--ink-dim);text-decoration:none;font-size:13.5px;font-weight:500;
+  color:#d4d9e8;text-decoration:none;font-size:13.5px;font-weight:500;
   letter-spacing:.02em;transition:color .2s;
 }
-.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover{color:#fff}
 @media(max-width:720px){.nav-links{display:none}}
 
 /* ---------- hero ---------- */
@@ -224,11 +225,9 @@ section.block{padding:92px 0;position:relative}
 
 /* ---------- contact ---------- */
 .contact{background:var(--bg-2);border-top:1px solid var(--line)}
-.contact.has-art{padding-top:0}
-.contact-art{position:relative;width:100%;margin:0 0 56px;overflow:hidden}
-.contact-art img{display:block;width:100%;height:auto;aspect-ratio:2400/1012;object-fit:cover}
-.contact-art::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,21,38,0) 55%,var(--bg-2) 100%),linear-gradient(to top,rgba(15,21,38,0) 85%,var(--bg-2) 100%);pointer-events:none}
-@media(max-width:720px){.contact-art{margin-bottom:36px}}
+.contact-art{width:100%;margin:0 0 56px;overflow:hidden;border-radius:18px;border:1px solid var(--line)}
+.contact-art img{display:block;width:100%;height:auto}
+@media(max-width:720px){.contact-art{margin-bottom:36px;border-radius:12px}}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 @media(max-width:720px){.contact-grid{grid-template-columns:1fr;gap:32px}}
 .contact h2{font-size:clamp(24px,3.4vw,36px);font-weight:700}
@@ -244,8 +243,8 @@ section.block{padding:92px 0;position:relative}
 /* ---------- footer ---------- */
 footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
-.foot .c{color:var(--ink-faint);font-size:12.5px;font-family:'JetBrains Mono',monospace}
-.foot .biz{color:var(--ink-faint);font-size:11.5px;line-height:1.6}
+.foot .c{color:#b8bfd4;font-size:12.5px;font-family:'JetBrains Mono',monospace}
+.foot .biz{color:#b8bfd4;font-size:11.5px;line-height:1.6}
 
 /* ---------- animation ---------- */
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -263,7 +262,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
 <header id="hdr">
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <img class="brand-bi" src="sb_bi_transparent.png" alt="SUPERBLOCK">
+      <img class="brand-bi" src="sb_logo_v2.png" alt="SUPERBLOCK">
       <span class="brand-kr">슈퍼블럭</span>
     </a>
     <nav class="nav-links">
@@ -462,9 +461,9 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
   </section>
 
   <!-- CONTACT -->
-  <section class="block contact has-art" id="contact">
-    <div class="contact-art"><img src="contact_campfire.jpg" alt="모닥불 앞에 모인 OZ 캐릭터들" loading="lazy"></div>
+  <section class="block contact" id="contact">
     <div class="wrap">
+      <div class="contact-art reveal"><img src="contact_campfire.jpg" alt="모닥불 앞에 모인 OZ 캐릭터들" loading="lazy"></div>
       <div class="contact-grid">
         <div class="reveal">
           <span class="eyebrow" style="display:block;margin-bottom:16px">05 — Contact</span>
@@ -492,7 +491,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
 
   <footer>
     <div class="wrap foot">
-      <div style="display:flex;align-items:center;gap:14px"><img src="sb_bi_transparent.png" alt="SUPERBLOCK" style="height:40px;width:auto"><div class="c">© 2026 SUPERBLOCK Co., Ltd.</div></div>
+      <div style="display:flex;align-items:center;gap:14px"><img src="sb_logo_v2.png" alt="SUPERBLOCK" style="height:22px;width:auto"><div class="c">© 2026 SUPERBLOCK Co., Ltd.</div></div>
       <div class="biz">
         주식회사 슈퍼블럭 &nbsp;|&nbsp; 대표 이주녕 &nbsp;|&nbsp; 사업자등록번호 106-87-14327<br>
         경기도 수원시 장안구 수성로327번길 12-8, 202호
