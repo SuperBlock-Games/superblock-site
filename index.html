@@ -224,6 +224,11 @@ section.block{padding:92px 0;position:relative}
 
 /* ---------- contact ---------- */
 .contact{background:var(--bg-2);border-top:1px solid var(--line)}
+.contact.has-art{padding-top:0}
+.contact-art{position:relative;width:100%;margin:0 0 56px;overflow:hidden}
+.contact-art img{display:block;width:100%;height:auto;aspect-ratio:2400/1012;object-fit:cover}
+.contact-art::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,21,38,0) 55%,var(--bg-2) 100%),linear-gradient(to top,rgba(15,21,38,0) 85%,var(--bg-2) 100%);pointer-events:none}
+@media(max-width:720px){.contact-art{margin-bottom:36px}}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 @media(max-width:720px){.contact-grid{grid-template-columns:1fr;gap:32px}}
 .contact h2{font-size:clamp(24px,3.4vw,36px);font-weight:700}
@@ -383,7 +388,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
       </div>
       <div class="title-showcase reveal" style="padding:0">
         <div class="oz-hero">
-          <img src="oz_hero.jpg" alt="OZ key visual" loading="lazy">
+          <img src="oz_hero_v2.jpg" alt="OZ key visual" loading="lazy">
           <div class="oz-shade"></div>
           <img class="oz-logo" src="oz_logo_oz.png" alt="OZ">
         </div>
@@ -457,7 +462,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--bg)}
   </section>
 
   <!-- CONTACT -->
-  <section class="block contact" id="contact">
+  <section class="block contact has-art" id="contact">
+    <div class="contact-art"><img src="contact_campfire.jpg" alt="모닥불 앞에 모인 OZ 캐릭터들" loading="lazy"></div>
     <div class="wrap">
       <div class="contact-grid">
         <div class="reveal">
